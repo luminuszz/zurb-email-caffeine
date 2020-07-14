@@ -33,8 +33,9 @@ html,
 
 $sizes: (
   5: 16px,
-   6: 15px,
+  6: 15px,
   7: 10px,
+  8: 14px,
 );
 
 $fonts: (
@@ -203,9 +204,18 @@ table.button.google table td {
   table.body .columns, table.body .column {
     padding: 0 !important;
   }
+  .timeline{
+    margin-bottom: 10px;
+    img:nth-child(1){
+      display: none !important;
+    }
+    img:nth-child(2){
+      display: block !important;
+    }
+  }
 
   p {
-    padding: 0 13px;
+    padding: 0 13px !important;
   }
 
   .table-content{
