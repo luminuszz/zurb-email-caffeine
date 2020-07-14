@@ -1,0 +1,231 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+
+
+
+
+
+body,
+html, 
+.body {
+  background: grey !important;
+
+  
+  
+}
+
+@font-face {
+  font-family: 'nexa-text';
+  src: url('../../fonts/FontfabricNexaTextBook.otf');
+}
+
+@font-face {
+  font-family: 'nexa-heavy';
+  src: url('../../fonts/FontfabricNexaHeavy.otf');
+}
+
+@font-face {
+  font-family: 'nexa-bold';
+  src: url('../../fonts/FontfabricNexaTextExtraBold.otf');
+}
+
+$sizes: (
+  5: 16px,
+   6: 15px,
+  7: 10px,
+);
+
+$fonts: (
+  primary: "nexa-text",
+  secondary: "nexa-bold",
+  terceary: "nexa-heavy",
+);
+
+@each $key, $size in $sizes {
+   .is-size-#{$key} {
+      font-size: $size !important;
+   }
+}
+
+@each $key, $font in $fonts  {
+  .is-font-#{$key}{
+    font-family: $font;
+  }
+}
+
+/* {
+  padding: 0 45px !important;
+} */
+
+
+.no-margin-top {
+   margin-top: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+ .is-bold{
+   font-weight: bold !important;
+ }
+ .is-uppercase {
+   text-transform: uppercase !important;
+ }
+ .no-padding {
+  td,th,p{
+    padding: 0 !important;
+  }
+ }
+ .no-margin{
+   margin: 0 !important;
+ }
+ 
+
+ p{
+  color: #2D1408;
+  font-size: 15px ;
+  font-family: "Roboto";
+  padding: 0 45px;
+}
+
+ .table-content{
+   padding: 0 45px !important;
+   border-radius: 5px;
+   height: 241px;
+   border-radius: 5px;
+
+
+   .has-padding {
+    padding: 14px 16px !important;
+  }
+
+   
+   margin-bottom: 10px !important;
+   table {
+     max-width: 510px;
+     width: 100%;
+     border: 1px solid #F8EDD6;
+     background-color: #F8EDD6 !important;
+     border-radius: 5px;
+     margin: 0 auto;
+
+     P{
+       padding: 0;
+     }
+
+     
+
+   }
+
+   
+   
+ }
+
+ .btn {
+  td {
+    background: transparent linear-gradient(270deg, #E4CA7F 0%, #E5BD60 100%) 0% 0% no-repeat padding-box !important;
+    height: 45px ;
+    border-radius: 5px;
+    border: none !important;
+
+    a {
+      margin: auto !important;
+      font-size: 16px !important;
+      margin: auto;
+    }
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+
+// Full Width Headers
+.header {
+  background: #8a8a8a;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+// Social Media
+table.button.facebook table td {
+  background: #3B5998 !important;
+  border-color: #3B5998;
+}
+
+table.button.twitter table td {
+  background: #1daced !important;
+  border-color: #1daced;
+}
+
+table.button.google table td {
+  background: #DB4A39 !important;
+  border-color: #DB4A39;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+
+@media( max-width: 425px){
+  table.body .columns, table.body .column {
+    padding: 0 !important;
+  }
+
+  p {
+    padding: 0 13px;
+  }
+
+  .table-content{
+    td, th ,tr {
+      border-right: none !important;
+    }
+    p{
+      padding-left: 18px !important ;
+    }
+  }
+
+  .has-border-mobile{
+    margin-top: 10px !important;
+    border-top: #2D1408 1px solid;
+
+    p:first-child {
+      margin-top: 10px;
+      width: 70%;
+    }
+  }
+
+  
+}
